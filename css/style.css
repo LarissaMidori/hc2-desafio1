@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+
+
+html {
+    /* O normal é 1rem = 16px (User Agent) = 100% (User Agent)  ----> O padrão passa a ser 10px que fica 1rem quando mudamos o font-size para 62.5% */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* ===== container =====*/
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5vh 90vh 5vh;
+    grid-template-areas: 
+    "header header"
+    "div-produtos div-form"
+    "footer footer";
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ===== header =====*/
+
+header {
+    grid-area: header;
+    background: rgb(136, 0, 0);
+}
+
+header h1 {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 3rem;
+    margin-left: 4rem;
+}
+header h1 #tem {
+    font-family: 'Redressed', cursive;
+    color: rgb(255, 255, 255);
+}
+
+/* ===== div-produtos ===== */
+
+#div-produtos {
+    grid-area: div-produtos;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 1);
+    align-items: center;
+  }
+
+#div-produtos .swiper{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+#div-produtos .swiper-container {
+    width: 90rem;
+    height: 45rem;
+  }
+
+#div-produtos .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+  }
+
+#div-produtos .swiper-slide img {
+    width: 65%;
+  }
+
+  #div-produtos .card  {
+    width: 35%;
+    font-family: 'Roboto', sans-serif;
+    border-left: solid 1px rgba(0, 0, 0, .2);
+  }
+
+
+#div-produtos .card h2.title {
+    text-align: center;
+    font-size: 2.3rem;
+    padding:0 1rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+}
+
+#div-produtos .card h2.price-old {
+    font-size: 1.8rem;
+    text-decoration-line:line-through
+}
+
+#div-produtos .card h2.price-new {
+    font-size: 2rem;
+}
+
+#div-produtos input {
+    width: 20rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+}
+
+#div-produtos .card {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+#div-produtos .contador {
+    background: chocolate;
+    width: 90rem;
+    height: 10rem;
+}
+/* ===== div-form ===== */
+
+#div-form {
+    grid-area: div-form;
+    background: rgba(0, 0, 0, .8);
+}
+
+#div-form .texts {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-form .texts h2#tudo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+}
+
+#div-form .texts h2#desconto {
+    font-family: 'Sansita', sans-serif;
+    font-size: 4.5rem;
+}
+
+#div-form .texts p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
+#div-form img#img {
+    width: 65%;
+    margin-top:2rem;
+    margin-left: 7rem;
+}
+
+#div-form .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#div-form .form input {
+    width: 45rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+}
+
+input.button {
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#div-form input#email {
+    margin: 2.2rem 0;
+}
+
+#div-form input#cadastro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 7rem;
+}
+
+/* ===== footer ===== */
+
+footer {
+    grid-area: footer;
+    background: rgba(0, 0, 0, .2);
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+/* ===== Swiper infinite-loop ===== */
+
+
+
+/* ===== Media Queries ===== */
+/* 
+ @media (min-width: 320px) and (max-width: 600px) {
+    body {
+
+    }
+} */
