@@ -112,20 +112,15 @@ header h1 #tem {
 #div-produtos .card {
     display: flex;
     flex-direction: column;
-
     text-align: center;
 }
 
-#div-produtos .contador {
-    background: chocolate;
-    width: 90rem;
-    height: 10rem;
-}
 /* ===== div-form ===== */
 
 #div-form {
     grid-area: div-form;
     background: rgba(0, 0, 0, .8);
+    
 }
 
 #div-form .texts {
@@ -199,11 +194,6 @@ footer p {
     text-align: center;
     padding-top: 1rem;
 }
-
-
-/* ===== Swiper infinite-loop ===== */
-
-
 
 /* ===== Media Queries ===== */
 /* 

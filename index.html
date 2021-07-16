@@ -12,6 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/contador-index.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -112,8 +113,28 @@
                 </div>
            </div>
             
-            <div class="contador">
-                
+            <div id="contador">
+                <ul class="countdown">
+                    <li>
+                        <span data-time></span>
+                        <div>dia(s)</div>
+                    </li>
+                    <div class="ponto">:</div>
+                    <li>
+                        <span data-time></span>
+                        <div>hora(s)</div>
+                    </li>
+                    <div class="ponto">:</div>
+                    <li>
+                        <span data-time></span>
+                        <div>min(s)</div>
+                    </li>
+                    <div class="ponto">:</div>
+                    <li>
+                        <span data-time></span>
+                        <div>sec(s)</div>
+                    </li>
+                </ul>
             </div>
         </section>
     
@@ -139,6 +160,7 @@
 
     </div>
 
+    <script type ="module" src="/js/contador.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/swiper.js"></script>
 </body>

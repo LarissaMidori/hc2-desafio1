@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    /* O normal é 1rem = 16px (User Agent) = 100% (User Agent)  ----> O padrão passa a ser 10px que fica 1rem quando mudamos o font-size para 62.5% */
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background: #121212;
+    display: grid;
+    align-items: center;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 40rem));
+    justify-content: center;
+    gap: 1rem;
+    padding: 10rem;
+}
+
+.countdown li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 1.6rem;
+    color: #09e;
+    background: #1e1e1e;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.countdown li span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 3.2rem;
+}
