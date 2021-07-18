@@ -1,10 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
     border-style: none;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ /* quando o ponteiro do mouse passa no link */
+ a:hover {
+     color: #000;
+     background: #fff;
+ }
 
 html {
     /* O normal é 1rem = 16px (User Agent) = 100% (User Agent)  ----> O padrão passa a ser 10px que fica 1rem quando mudamos o font-size para 62.5% */
@@ -109,7 +119,6 @@ header h1 #tem {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 #div-form .cadastro input {
@@ -119,6 +128,8 @@ header h1 #tem {
     text-align: center;
     font-size: 2rem;
     margin: 1rem 0;
+    outline: none;
+
 }
 
 #div-form input.button {
@@ -126,6 +137,10 @@ header h1 #tem {
     color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 2.4rem;
+}
+
+#div-form input.button:hover {
+    background: rgb(105, 4, 4);
 }
 
 /* ===== div-produtos ===== */
