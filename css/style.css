@@ -6,8 +6,6 @@
     border-style: none;
 }
 
-
-
 html {
     /* O normal é 1rem = 16px (User Agent) = 100% (User Agent)  ----> O padrão passa a ser 10px que fica 1rem quando mudamos o font-size para 62.5% */
     font-size: 62.5%;
@@ -17,112 +15,61 @@ html {
 /* ===== container =====*/
 
 .container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5vh 90vh 5vh;
-    grid-template-areas: 
-    "header header"
-    "div-produtos div-form"
-    "footer footer";
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ===== header =====*/
 
 header {
-    grid-area: header;
+    height: 5rem;
     background: rgb(136, 0, 0);
 }
 
 header h1 {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 3rem;
-    margin-left: 4rem;
+    padding-left: 4rem;
 }
 header h1 #tem {
     font-family: 'Redressed', cursive;
     color: rgb(255, 255, 255);
 }
 
-/* ===== div-produtos ===== */
+/* ===== div-contador ===== */
 
-#div-produtos {
-    grid-area: div-produtos;
-    display: flex;
-    flex-direction: column;
+#contador {
+    height: 15vh;
     background: rgba(0, 0, 0, 1);
-    align-items: center;
-  }
-
-#div-produtos .swiper{
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-}
-
-#div-produtos .swiper-container {
-    width: 90rem;
-    height: 45rem;
-  }
-
-#div-produtos .swiper-slide {
-    display: flex;
-    flex-direction: row;
-    background: rgb(255, 255, 255);
-  }
-
-#div-produtos .swiper-slide img {
-    width: 65%;
-  }
-
-  #div-produtos .card  {
-    width: 35%;
-    font-family: 'Roboto', sans-serif;
-    border-left: solid 1px rgba(0, 0, 0, .2);
-  }
-
-
-#div-produtos .card h2.title {
-    text-align: center;
-    font-size: 2.3rem;
-    padding:0 1rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-
-}
-
-#div-produtos .card h2.price-old {
-    font-size: 1.8rem;
-    text-decoration-line:line-through
-}
-
-#div-produtos .card h2.price-new {
-    font-size: 2rem;
-}
-
-#div-produtos input {
-    width: 20rem;
-    height: 4.5rem;
-    border-radius: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.4rem;
-    margin-top: 2rem;
-}
-
-#div-produtos .card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 /* ===== div-form ===== */
 
 #div-form {
-    grid-area: div-form;
-    background: rgba(0, 0, 0, .8);
-    
+    height: 80vh;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    background-image: url(../assets/JPEG/black-brick.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: rgba(0, 0, 0, .8); */
+    padding: 0 15rem;
+    margin: auto;
 }
 
+#div-form img {
+    width: 100%;
+}
+
+#div-form .text-and-form {
+    display: flex;
+    flex-direction: column;
+}
 #div-form .texts {
     color: rgb(255, 255, 255);
     display: flex;
@@ -131,7 +78,6 @@ header h1 #tem {
 }
 
 #div-form .texts h2#tudo {
-    font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
 }
 
@@ -144,61 +90,133 @@ header h1 #tem {
     font-family: 'Roboto Mono', monospace;
     font-size: 1.8rem;
     text-align: center;
-    margin: 2rem 3rem;
+    margin: 3rem 3rem;
 }
 
-#div-form img#img {
-    width: 65%;
-    margin-top:2rem;
-    margin-left: 7rem;
+#div-form .cadastro {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-#div-form .form {
+#div-form .cadastro form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
 }
 
-#div-form .form input {
+#div-form .cadastro input {
     width: 45rem;
     height: 4.5rem;
     border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
-input.button {
+#div-form input.button {
     background: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
-}
-
-#div-form input#email {
-    margin: 2.2rem 0;
-}
-
-#div-form input#cadastro {
-    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
     font-size: 2.4rem;
-    margin-bottom: 7rem;
+}
+
+/* ===== div-produtos ===== */
+
+#div-produtos {
+    background: rgba(0, 0, 0, 1);
+    height: 95vh;
+}
+
+#div-produtos .gallery{
+    padding-top: 15rem;
 }
 
 /* ===== footer ===== */
 
 footer {
-    grid-area: footer;
+    height: 5rem;
     background: rgba(0, 0, 0, .2);
+    justify-content: center;
 }
 
 footer p {
-    font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     text-align: center;
     padding-top: 1rem;
 }
 
 /* ===== Media Queries ===== */
-/* 
- @media (min-width: 320px) and (max-width: 600px) {
-    body {
+
+@media (max-width: 1280px) {
+    #div-form {
+        height: 80vh;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content:space-between;
+        background-image: url(../assets/JPEG/black-brick.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background: rgba(0, 0, 0, .8); */
+        padding: 0 5rem;
+        margin: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    #div-form {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #div-form img {
+        width: 0;
 
     }
-} */
+
+    #contador {
+        height: 13vh;
+        background: rgba(0, 0, 0, 1);
+    }
+}
+ @media (max-width: 768px) {
+    #div-form {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+    #div-form img {
+        width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #div-form {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        
+    }
+    #div-form img {
+        width: 0;
+    }
+} 

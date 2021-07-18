@@ -11,157 +11,100 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Redressed&family=Roboto+Mono&family=Roboto:wght@400;500;700&family=Sansita:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/contador-index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/contador-index.css">
     <link rel="stylesheet" href="css/style.css">
 
 
     <title>Black Friday Imperdível!!</title>
 </head>
 <body>
+
+    <header>
+        <h1><span id="tem">Tem</span>Tudo</h1>
+    </header>
+
     
     <div class="container">
 
-        <header>
-            <h1><span id="tem">Tem</span>Tudo</h1>
-        </header>
-
-        <section id="div-produtos">
-            <!-- Swiper -->
-           <div class="swiper">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <img src="/assets/JPEG/fogao.jpg" alt="">
-                            <div class="card">
-                                <div class="text-card">
-                                    <h2 class="title">Fogão 5 Bocas Consul - Acend. Automático</h2>
-                                <h2 class="price-old">De: R$ 1.500,00</h2>
-                                <h2 class="price-new">Por: RS 999,99</h2>
-                                    <input class="button" type="button" value="Comprar">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="/assets/JPEG/geladeira.jpg" alt="">
-                            <div class="card">
-                                <div class="text-card">
-                                    <h2 class="title">Geladeira Frost Free Electrolux 579 Litros</h2>
-                                <h2 class="price-old">De: R$ 6.400,00</h2>
-                                <h2 class="price-new">Por: RS 5.699,99</h2>
-                                    <input class="button" type="button" value="Comprar">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="/assets/JPEG/micro.jpg" alt="">
-                            <div class="card">
-                                <div class="text-card">
-                                    <h2 class="title">Micro-ondas Consul 20L CM020</h2>
-                                <h2 class="price-old">De: R$ 784,99</h2>
-                                <h2 class="price-new">Por: RS 502,45</h2>
-                                    <input class="button" type="button" value="Comprar">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="/assets/JPEG/note.jpg" alt="">
-                            <div class="card">
-                                <div class="text-card">
-                                    <h2 class="title">Notebook Gamer Acer Nitro 5 AN515-54-58CL</h2>
-                                <h2 class="price-old">De: R$ 6.599,00</h2>
-                                <h2 class="price-new">Por: RS 5.699,00</h2>
-                                    <input class="button" type="button" value="Comprar">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="/assets/JPEG/smart.jpg" alt="">
-                            <div class="card">
-                                <div class="text-card">
-                                    <h2 class="title">Smartphone Motorola Moto G30 128GB</h2>
-                                <h2 class="price-old">De: R$ 1.900,00</h2>
-                                <h2 class="price-new">Por: RS 1.599,99</h2>
-                                    <input class="button" type="button" value="Comprar">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="/assets/JPEG/tv.jpg" alt="">
-                            <div class="card">
-                                <div class="text-card">
-                                    <h2 class="title">Smart TV Crystal UHD 4K LED 50” </h2>
-                                <h2 class="price-old">De: R$ 3.700,00</h2>
-                                <h2 class="price-new">Por: RS 2.999,99</h2>
-                                    <input class="button" type="button" value="Comprar">
-                                </div>
-                            </div>
-                        </div>
-                      
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-           </div>
-            
-            <div id="contador">
-                <ul class="countdown">
-                    <li>
-                        <span data-time></span>
-                        <div>dia(s)</div>
-                    </li>
-                    <div class="ponto">:</div>
-                    <li>
-                        <span data-time></span>
-                        <div>hora(s)</div>
-                    </li>
-                    <div class="ponto">:</div>
-                    <li>
-                        <span data-time></span>
-                        <div>min(s)</div>
-                    </li>
-                    <div class="ponto">:</div>
-                    <li>
-                        <span data-time></span>
-                        <div>sec(s)</div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <div id="contador">
+            <ul class="countdown">
+                <li>
+                    <span data-time></span>
+                    <div>dia(s)</div>
+                </li>
+                <div class="ponto">:</div>
+                <li>
+                    <span data-time></span>
+                    <div>hora(s)</div>
+                </li>
+                <div class="ponto">:</div>
+                <li>
+                    <span data-time></span>
+                    <div>min(s)</div>
+                </li>
+                <div class="ponto">:</div>
+                <li>
+                    <span data-time></span>
+                    <div>sec(s)</div>
+                </li>
+            </ul>
+        </div>
     
-        <section id="div-form">
-            <img  id="img" src="/assets/SVG/black-friday.svg" alt="imagem de um retângulo com as palavras black friday em preto com um fundo branco e bordas vermelhas">
-            <div class="texts">
-                <h2 id="tudo">Tudo com até </h2>
-                <h2 id="desconto">70 % de desconto!!!</h2>
-                <p>
-                    Cadastre-se para receber as ofertas em primeira mão!
-                </p>
-            </div>
-            <div class="form">
-                <input type="text" placeholder="Digite seu nome" name="" id="name">
-                <input type="email" placeholder="Digite seu e-mail" name="" id="email">
-                <input class="button" type="submit" id="cadastro" value="Quero me cadastrar">
-            </div>
-        </section>
-        
-        <footer>
-            <p>© Copyright 2021. Todos os direitos reservados</p>
-        </footer>
-
     </div>
 
+        <section id="div-form">
+            <div class="image">
+                <img  id="img" src="/assets/PNG/Group 2.png" alt="imagem de um retângulo com as palavras black friday em preto com um fundo branco e bordas vermelhas">
+            </div>
+            <div class="text-and-form">
+                <div class="texts">
+                    <h2 id="tudo">Tudo com até </h2>
+                    <h2 id="desconto">70 % de desconto!!!</h2>
+                    <p>
+                        Cadastre-se para receber as ofertas em primeira mão!
+                    </p>
+                </div>
+                <div class="cadastro" id="content">
+                    <form id="form">
+                        <input type="text" placeholder="Digite seu nome"  id="name">
+                        <input type="email" placeholder="Digite seu e-mail"  id="email">
+                        <input class="button" type="submit" id="cadastro" value="Quero me cadastrar">
+                    </form>  
+                </div>
+            </div>
+        
+        </section>
+
+        <section id="div-produtos">
+            <!-- Flickity HTML init -->
+            <div class="gallery">
+                <div class="main-carousel">
+                    <div class="cell">
+                        <img src="/assets/JPEG/fogao-prod.jpg" alt="">
+                    </div>
+                    <div class="cell">
+                        <img src="/assets/JPEG/geladeira-prod.jpg" alt="">
+                    </div>
+                    <div class="cell">
+                        <img src="/assets/JPEG/micro-prod.jpg" alt="">
+                    </div>
+                    <div class="cell">
+                        <img src="/assets/JPEG/tv-prod.jpg" alt="">
+                    </div>
+                  </div>
+            </div>
+
+        </section>
+
+    <footer>
+        <p>© Copyright 2021. Todos os direitos reservados</p>
+    </footer>
+
     <script type ="module" src="/js/contador.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/js/swiper.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/js/flickity.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
