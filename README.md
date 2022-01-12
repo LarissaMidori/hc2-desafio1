@@ -8,3 +8,5 @@ Criar um sistema de e-commerce para cadastro de email na landing page para receb
 -Cadastre seu e-mail para receber promoções 
 
 -Dados no localstorage
+
+- Endereço do projeto hospedado: (https://temtudo.netlify.app/)
